@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
+   <link rel="stylesheet" href="css/company_signup.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar navbar-dark bg-dark">
+        
+        
+            <a class="navbar-brand" href="#">
+                <img src="img/real1.jpg" alt="" width="50" height="44" class="m-2">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link active"  href="#">Home</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Questions</a>
+              </li>
+             
+            </ul>
+           
+          
+          
+        </div>
+        
+      </nav>
+
+
+
+
+
+     
+
+
+<section id="lean" class="p-5">
+  
+    
+        <div class="row align-items-center justify-content-betweeen">
+          
+            <div class="col-md">
+                <img src="img/fundamentals.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md">
+              <section>
+                <h3>CREATE COMPANY ACCOUNT</h3>
+                <div class="container">
+                  <form action="/action_page.php">
+                    
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="fname">Company Name</label>
+                      </div>
+                      <div class="col-75">
+                        <input type="text" id="fname" name="Company name" placeholder="Company Name">
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="lname">Address</label>
+                      </div>
+                      <div class="col-75">
+                        <input type="text" id="lname" name="address" placeholder="address">
+                      </div>
+                    </div>
+                     <div class="row">
+                      <div class="col-25">
+                        <label for="lname">Company Email</label>
+                      </div>
+                      
+                      <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Company Email">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="lname">Password</label>
+                      </div>
+                      
+                      <div class="col-75">
+                        <input type="text" id="password" name="Password" placeholder="Password">
+                      </div>
+                    </div>
+
+                  
+
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="lname">Website</label>
+                      </div>
+                      
+                      <div class="col-75">
+                        <input type="text" id="lname" name="Website" placeholder="Website">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="country">Industry</label>
+                      </div>
+                      <div class="col-75">
+                        <select id="country" name="country">
+                          <option value="none">--None--</option>
+                          <option value="address">Agriculture</option>
+                          <option value="technology">Technology</option>
+                          <option value="health">Health</option>
+                          <option value="communication">Communication</option>
+                          <option value="energy">Energy</option>
+                          <option value="environmental">Environmental</option>
+                          <option value="food">Food</option>
+                          <option value="legal_assistance">Legal Assistance</option>
+                          <option value="media">Media</option>
+                          <option value="others">Others</option>
+                        </select>
+                      </div>
+                    </div>
+                    
+                    <div class="row m-5">
+                      <input type="submit" value="Submit">
+                    </div>
+                  </form>
+                </div>
+            </section>
+            </div>
+
+        
+        
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<footer class="text-center text-light bg-dark position-relative p-5">
+    
+        <p class="lead">copyright &copy; 2022 Frontend Bootcamp</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1 text-light"></i>
+        </a>
+    
+</footer>
+
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="enroll" tabindex="-1" a aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="fw-bold mb-0" id="enroll">Sign up for free</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
+                <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                <hr class="my-4">
+                <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
+                  <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+                  Sign up with Twitter
+                </button>
+                <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" type="submit">
+                  <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+                  Sign up with Facebook
+                </button>
+                <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
+                  <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
+                  Sign up with GitHub
+                </button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- <section id="instructors" class="bg-primary p-5">
+    <div class="container">
+        <h2 class="text-white text-center">Our Instructors</h2>
+        <p class="lead text-light text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Architecto iure odit quia expedita corporis? At.</p>
+
+
+            <div class="col-md" style="width: 18rem;">
+                <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up
+                     the bulk of the card's content.</p>
+                  <a href="" class="bi bi-twitter text-dark mx-1"></a>
+                  <a href="" class="bi bi-facebook text-dark mx-1"></a>
+                  <a href="" class="bi bi-instagram text-dark mx-1"></a>
+                  <a href="" class="bi bi-linkedin text-dark mx-1"></a>
+
+                </div>
+            </div>
+
+            <div class="col-md" style="width: 18rem;">
+                <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up
+                     the bulk of the card's content.</p>
+                  <a href="" class="bi bi-twitter text-dark mx-1"></a>
+                  <a href="" class="bi bi-facebook text-dark mx-1"></a>
+                  <a href="" class="bi bi-instagram text-dark mx-1"></a>
+                  <a href="" class="bi bi-linkedin text-dark mx-1"></a>
+
+                </div>
+            </div>
+
+             
+             </div>
+
+            
+
+        
+
+            
+
+
+    </div>
+
+</section> -->
+
+
+
+
+
+
+
+
+
+
+    <!-- <section class=''>
+        <div class="container">
+            <div class="card mt-3 bg-dark text-light text-center" style="width: 18rem;">
+                <img src="img/fundamentals.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+    </section> -->
+
+
+
+
+     <!-- <section class="navbar navbar-light bg-primary">
+        <div class="container">
+        <div class="container-fluid">
+          <form class="d-flex">
+            <input class="form-control ms-auto " type="search" placeholder="Subscribe" >
+            <button class="btn bg-dark" type="submit" style="color:white">Subscribe</button>
+          </form>
+        </div>
+        </div>
+    </section>
+
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">What You will learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Instructors" class="nav-link">Instructors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav> -->
+    
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+    <script>
+      mapboxgl.accessToken =
+        'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-0.989950, 5.925240],
+        zoom: 18,
+      })
+    </script>
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+
+.cardF label,.cardF input,.cardF select{
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+.cardF h3{
+    margin-left: 180px;
+}
+.cardF input{
+    width: 300px;
+    height: 25px;
+}
+.cardF select{
+    width: 300px;
+    height: 35px;
+}
+.info{
+    font-weight: 500;
+    color: #505050;
+    background-image: linear-gradient(to bottom right, rgb(182, 226, 229), rgb(224, 243, 237));
+    border: 2px solid rgba(204, 234, 236, 0.486);
+    border-radius: 16px;
+    margin:65px 0 20px 0;
+    padding: 20px 10px 20px 10px;
+    width: 250px;
+}
+.sitt{
+    width: 75%;
+}
+
+.flex-container {
+    margin: 50px 0 0 0;
+    background-image: url("images/CompJobPageBg.svg");
+    background-size: 75%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-color: azure;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 200px;
+
+  }

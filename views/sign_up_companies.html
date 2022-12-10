@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account for your Company</title>
+    <link rel="stylesheet" href="/css/style2.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <form method="post" action="/register_company">
+          <h2>Website Logo</h2>
+          <p>CREATE COMPANY ACCOUNT</p>
+          <div class="textfield">
+            <input
+              type="text"
+              id="email"
+              name="company"
+              placeholder="Company Name"
+              required
+            />
+          </div>
+          <div class="textfield">
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Address"
+              required
+            />
+          </div>
+          <div class="textfield">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Company Email"
+              required
+            />
+          </div>
+          <div class="textfield">
+            <input
+              type="url"
+              name="website_url"
+              id="websiteurl"
+              placeholder="Website URL"
+              required
+            />
+          </div>
+          <div class="textfield">
+            <select id="industry" name="industry" required>
+              <option id="select" value="select">
+                Select your Company's Industry
+              </option>
+              <option value="none">--None--</option>
+              <option value="address">Agriculture</option>
+              <option value="technology">Technology</option>
+              <option value="health">Health</option>
+              <option value="communication">Communication</option>
+              <option value="energy">Energy</option>
+              <option value="environmental">Environmental</option>
+              <option value="food">Food</option>
+              <option value="legal_assistance">Legal Assistance</option>
+              <option value="media">Media</option>
+              <option value="others">Others</option>
+            </select>
+          </div>
+          <div class="textfield">
+            <input
+              type="text"
+              id="employees"
+              name="employees_no"
+              placeholder="Employees"
+              required
+            />
+          </div>
+          <div class="textfield">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone"
+              required
+            />
+          </div>
+          <div class="textfield">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

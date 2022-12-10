@@ -1,0 +1,21 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 55V10C15 9.325 15 8.625 15.175 7.95C15.328 7.27657 15.6668 6.65955 16.1529 6.16901C16.639 5.67848 17.253 5.33411 17.925 5.175C18.65 5 21.825 5 22.5 5H40C40.675 5 41.375 5 42.05 5.175C42.7234 5.32802 43.3405 5.66683 43.831 6.15294C44.3215 6.63905 44.6659 7.25298 44.825 7.925C45 8.625 45 9.325 45 10V55H15Z" fill="white" stroke="#ABABAB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.99994 35V50C4.99994 52.75 7.24994 55 9.99994 55H14.9999V30H9.99994C9.32494 30 8.62494 30 7.94994 30.175C7.27494 30.35 6.64994 30.675 6.14994 31.175C5.67494 31.65 5.34994 32.275 5.17494 32.95C5.03382 33.6237 4.97505 34.3121 4.99994 35Z" fill="white" stroke="#ABABAB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M52.05 22.675C51.3763 22.5339 50.6879 22.4751 50 22.5H45V55H50C51.3261 55 52.5979 54.4732 53.5355 53.5355C54.4732 52.5979 55 51.3261 55 50V27.5C55 26.8 55 26.125 54.825 25.45C54.65 24.775 54.325 24.15 53.825 23.65C53.35 23.175 52.725 22.85 52.05 22.675Z" fill="#FFFCFC" stroke="#ABABAB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<mask id="path-4-inside-1_58_39" fill="white">
+<rect x="26" y="42" width="8" height="14" rx="1"/>
+</mask>
+<rect x="26" y="42" width="8" height="14" rx="1" fill="white" stroke="#ABABAB" stroke-width="4" mask="url(#path-4-inside-1_58_39)"/>
+<mask id="path-5-inside-2_58_39" fill="white">
+<rect x="26.25" y="31.25" width="7.5" height="7.5" rx="1"/>
+</mask>
+<rect x="26.25" y="31.25" width="7.5" height="7.5" rx="1" fill="white" stroke="#ABABAB" stroke-width="4" mask="url(#path-5-inside-2_58_39)"/>
+<mask id="path-6-inside-3_58_39" fill="white">
+<rect x="26.25" y="20" width="7.5" height="7.5" rx="1"/>
+</mask>
+<rect x="26.25" y="20" width="7.5" height="7.5" rx="1" fill="white" stroke="#ABABAB" stroke-width="4" mask="url(#path-6-inside-3_58_39)"/>
+<mask id="path-7-inside-4_58_39" fill="white">
+<rect x="26.25" y="8.75" width="7.5" height="7.5" rx="1"/>
+</mask>
+<rect x="26.25" y="8.75" width="7.5" height="7.5" rx="1" fill="white" stroke="#ABABAB" stroke-width="4" mask="url(#path-7-inside-4_58_39)"/>
+</svg>

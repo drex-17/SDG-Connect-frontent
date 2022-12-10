@@ -1,0 +1,68 @@
+body{
+    background-color: #F4EFEF;
+}
+section{
+    border: 10px solid #F4EFEF;
+    border-radius: 5px;
+    height: 500px;
+    width: 560px;
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    position: relative;
+    font-family: "Futura";
+    top: -50px;
+    left: 150px;
+}
+p{
+    font-family: 'Futura Md BT', sans-serif;
+    color:#666666;
+    position: relative;
+    top: -40px;
+    left: 182px;
+}
+.textfield{
+    margin-bottom: 10px;
+    position: relative;
+    top: 10px;
+    margin-left: 75px;
+}
+input{
+    border: 1px solid #DDDDDD;
+    width: 350px;
+    height: 55px;
+    border-radius: 8px;
+}
+::placeholder{
+    position: relative;
+    left: 16px;
+    font-family: 'Futura Lt BT', sans-serif;
+    font-style:normal; 
+    font-weight: normal;
+}
+button{
+    border: 1px solid #6C63FF;
+    width: 350px;
+    height: 55px;
+    border-radius: 8px;
+    color:#6C63FF;
+    margin-left: 75px;
+    margin-top: 20px;
+    font-family: "Futura";
+    cursor: pointer;
+}
+button:hover{
+    color:whitesmoke;    
+    background-color: #6C63FF;
+}
+
+

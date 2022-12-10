@@ -1,0 +1,13 @@
+h1{
+    font-family: "Futura";
+}
+h6{
+    font-family:'Futura Md BT', sans-serif;
+    font-weight:bold;
+}
+.form-control #form-control-lg{
+    font-family:'Futura LT BT', sans-serif;
+}
+.formcontrol::placeholder{
+    font-size: 32px;
+}
