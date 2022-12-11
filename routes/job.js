@@ -8,12 +8,14 @@ router.get('/jobs', async (req, res) => {
   res.render('jobs', { jobs: jobs });
 });
 
-router.get('/jobs/search', async (req, res) => {
+router.get('/job/search', async (req, res) => {
   const jobs = await getJobs();
   res.render('jobs', { jobs: jobs });
 });
 
-
+router.get('/job/post', (req, res) => {
+  res.render('companyJob');
+})
 
 /**  POST /job
  *  fields: 
@@ -21,7 +23,9 @@ router.get('/jobs/search', async (req, res) => {
  * working_hrs, "min_salary","max_salary"
  *  
  */
-router.post('/add_job', async (req, res, next) => {
+router.post('/job/post', async (req, res) => {
   let data = JSON.stringify({ ...req.body });
   let response = await addJob(data);
 })
+
+module.exports = router

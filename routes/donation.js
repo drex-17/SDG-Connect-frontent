@@ -1,6 +1,6 @@
 const logger = require('../utils/logger');
 const { Router } = require('express');
-const { addJob } = require('../db_api');
+const { addDonation, getDonations } = require('../db_api');
 
 const router = Router();
 // ause_donating_to":"young developers coding",
@@ -20,3 +20,5 @@ router.get('/donation', async (req, res, next) => {
 router.post('/add_donation', (req, res, next) => {
   
 })
+
+module.exports = router;

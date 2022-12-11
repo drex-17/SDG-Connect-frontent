@@ -17,7 +17,8 @@ require('dotenv').config();
 const upload = multer();
 let indexRouter = require('./routes/index');
 let authRouter = require('./routes/auth');
-
+let jobRouter = require('./routes/job');
+let donationRouter = require('./routes/donation');
 const app = express();
 
 authenticateUser(passport);
@@ -66,6 +67,8 @@ app.use(function (req, res, next) {
 // });
 app.use('/', indexRouter);
 app.use('/', authRouter);
+app.use('/', jobRouter);
+app.use('/', donationRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

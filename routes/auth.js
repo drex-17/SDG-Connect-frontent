@@ -15,7 +15,7 @@ const router = Router('');
 // GET /index
 router.get('/', async (req, res, next) => {
   logger.info('index' + req.url)
-  res.render('index')
+  res.render('index', {user: ''})
 })
 
 /* GET /login
