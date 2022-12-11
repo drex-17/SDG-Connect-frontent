@@ -8,13 +8,7 @@
 body{
     font-family: 'Futura Md BT', sans-serif;
     background-color: #F4EFEF;
-    max-height: 50%;
-}
-
-nav{
-    background-color: #ffff ;
-    height: 80px;
-    width: 100%;
+    /* max-height: 50%; */
 }
 
 .logo{
@@ -24,23 +18,7 @@ nav{
     height: 100px;
     width: 100px;
 }
-nav ul{
-    float:right;    
-}
 
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 40px;
-    position: relative;
-    right: 360px;
-    text-transform: uppercase;
-}
-nav ul li a{
-    text-decoration: none;
-    color: #1E1E1E;
-    font-weight: bold;
-}
 li:hover{
     color: blueviolet;
 }
@@ -62,6 +40,7 @@ input{
     top: 39px;
 }
 .main_container{
+    margin-top: 3.5rem;
     width: 100%;
     height:auto;
     background-color: #F4EFEF;
@@ -201,7 +180,7 @@ input[type="search"]:focus{
     position: relative;
 }
 span{
-    position: relative;
+    /* position: relative; */
     left: 20px;
     top: 8px;
     font-size: 16px;
@@ -404,14 +383,14 @@ strong:hover{
 
 
 .description_box{
-    width: 600px;
+    /* width: 600px; */
     height: 720px;
     background: #ffff;
     box-sizing: border-box;
     font-size: 24px;
     border-radius: 5px;
     position: relative;
-    left: 58%;
+    /* left: 58%; */
     bottom: 254vh;
 }
 

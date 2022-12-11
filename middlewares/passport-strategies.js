@@ -31,11 +31,11 @@ const authenticateUser = (passport) => {
     try {
       // Get user
       logger.info(`email: ${email}:${password}`);
-      const user = await getUser({ email, password });
+      const user = await getUser(JSON.stringify({ email, password }));
 
       if (user.id) {
         let authenticated_user = { id: user.id, email: user.email }
-        done(null, user);
+        done(null, authenticated_user);
       } else {
         done(null, false, { message: "Invalid credentials" }); // status 401
       }

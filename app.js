@@ -7,6 +7,7 @@ var session = require('express-session');
 const passport = require('passport');
 const logger = require('./utils/logger');
 // const cookieParser = require('cookie-parser');
+const flash = require('connect-flash');
 const morganMiddleware = require("./middlewares/morgan.middleware");
 const morgan = require('morgan');
 const multer = require('multer');
@@ -19,8 +20,11 @@ let indexRouter = require('./routes/index');
 let authRouter = require('./routes/auth');
 let jobRouter = require('./routes/job');
 let donationRouter = require('./routes/donation');
-const app = express();
+let collaboRouter = require('./routes/collabo');
+let eventRouter = require('./routes/event');
 
+
+const app = express();
 authenticateUser(passport);
 
 app.use(express.json());
@@ -63,12 +67,16 @@ app.use(function (req, res, next) {
 */
 
 // app.post('/login', async (req, res) => {
-  // console.log(req.body.email);
+// console.log(req.body.email);
 // });
+app.use(flash());
+
 app.use('/', indexRouter);
-app.use('/', authRouter);
-app.use('/', jobRouter);
-app.use('/', donationRouter);
+app.use('/auth', authRouter);
+app.use('/job', jobRouter);
+app.use('/donation', donationRouter);
+app.use('/collaboration', collaboRouter);
+app.use('/event', eventRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

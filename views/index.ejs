@@ -1,136 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>SDG MainPage</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    .kid, .bask{
+  <head>
+    <title>SDG MainPage</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      
+      /* <!-- Remove the navbar's default margin-bottom and rounded borders --> */
+      .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+      .kid,
+      .bask {
         padding-bottom: 20px;
         padding-top: 10px;
         text-decoration: none;
-    }
-    .agri{
-      display: flex;
-       float: left;
-       padding-top: 0;
+      }
+      .agri {
+        display: flex;
+        float: left;
+        padding-top: 0;
+      }
+      .agri p {
+        align-items: center;
+        justify-content: center;
+        border: 1px solid grey;
+        border-radius: 2px;
+        display: flex;
+        float: left;
+        margin-right: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
 
-    }
-    .agri p{
-      align-items: center;
-      justify-content: center;
-      border: 1px solid grey;
-      border-radius: 2px;
-      display: flex;
-      float: left;
-      margin-right: 10px;
-      padding-right: 10px;
-      padding-left: 10px;
-    }
-  
-    .filte{
+      .filte {
         background-color: white;
         color: black;
         padding: 20px 25px;
-    }
-    .filtEl div:hover{
+      }
+      .filtEl div:hover {
         background-color: rgba(189, 189, 189, 0.185);
         color: black;
         border-radius: 5px;
-    }
-    
-    
-    .sCards{
-    width: 100% !important;
-    margin-top: 100px;
-    margin-left: 0 !important;
-    background-color: white;
-    color: black;
-    padding: 20px 25px;
-    }
-    .sCards h4 h2{
-      font-weight: bold;
-    }
- 
-    .card-subtitle{
-      font-weight: bold;
-    }
-    .wDet{
+      }
+
+      .sCards {
+        width: 100% !important;
+        margin-top: 100px;
+        margin-left: 0 !important;
+        background-color: white;
+        color: black;
+        padding: 20px 25px;
+      }
+      .sCards h4 h2 {
+        font-weight: bold;
+      }
+
+      .card-subtitle {
+        font-weight: bold;
+      }
+      .wDet {
         margin: 2px;
         border: 2px solid rgba(207, 207, 207, 0.616);
         border-radius: 4px;
         padding: 2px;
         float: left;
         display: flex;
-    }
+      }
 
-   
-    a .sCards{
+      a .sCards {
         text-decoration: none;
-    }
-    .eventCards{
-      justify-content: center;
-      align-items: center;
-      border: 2px solid rgba(207, 207, 207, 0.616);
-      border-radius: 4px;
-    }
-   
-    .solon {
+      }
+      .eventCards {
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgba(207, 207, 207, 0.616);
+        border-radius: 4px;
+      }
+
+      .solon {
         background: rgb(66, 141, 190);
-    }
-    .merger{
+      }
+      .merger {
         background-color: #f2f2f2;
         color: black;
-        padding: 0px 25px;   
-    }
-    
-    /*Job Card */
-    .avatar{
-      position: relative;
-      left: 24px;
-      top: 16px;
-      }
-      .employee{
-      position: relative;
-      left: 80px;
-      bottom: 135px;
-      font-size: 20px;
-      font-family: 'Futura Bk BT',sans-serif;
-      }
-      .num_employees{
-      color: #505050;
-      position: relative;
-      left: 80px;
-      bottom: 135px;
-      font-size: 16px;
-      font-family: 'Futura Lt BT',sans-serif;
-      }
-     
-      .Industry{
-      position: relative;
-      left: 80px;
-      bottom: 129px;
-      font-size: 20px;
-      font-family: 'Futura Bk BT',sans-serif;
-      }
-      .technology{
-      color: #505050;
-      position: relative;
-      left: 80px;
-      bottom: 129px;
-      font-size: 16px;
-      font-family: 'Futura Lt BT',sans-serif;
+        padding: 0px 25px;
       }
 
-      .gamalitech{
+      /*Job Card */
+      .avatar {
+        position: relative;
+        left: 24px;
+        top: 16px;
+      }
+      .employee {
+        position: relative;
+        left: 80px;
+        bottom: 135px;
+        font-size: 20px;
+        font-family: "Futura Bk BT", sans-serif;
+      }
+      .num_employees {
+        color: #505050;
+        position: relative;
+        left: 80px;
+        bottom: 135px;
+        font-size: 16px;
+        font-family: "Futura Lt BT", sans-serif;
+      }
+
+      .Industry {
+        position: relative;
+        left: 80px;
+        bottom: 129px;
+        font-size: 20px;
+        font-family: "Futura Bk BT", sans-serif;
+      }
+      .technology {
+        color: #505050;
+        position: relative;
+        left: 80px;
+        bottom: 129px;
+        font-size: 16px;
+        font-family: "Futura Lt BT", sans-serif;
+      }
+
+      .gamalitech {
         align-content: center;
         text-align: center;
         justify-content: center;
@@ -138,12 +142,12 @@
         left: 32px;
         top: 20px;
       }
-      .main_container{
+      .main_container {
         width: 100%;
-        height:auto;
-        background-color: #F4EFEF;
-        }
-        .box1{
+        height: auto;
+        background-color: #f4efef;
+      }
+      .box1 {
         width: 354px;
         height: 260px;
         background: #ffff;
@@ -152,216 +156,266 @@
         border-radius: 10px;
         position: relative;
         left: 2vw;
-        }
-        .main_container a{
-        text-decoration:none;
-        color: #1E1E1E;
-        font-family: 'Futura Md BT',sans-serif;
+      }
+      .main_container a {
+        text-decoration: none;
+        color: #1e1e1e;
+        font-family: "Futura Md BT", sans-serif;
         font-weight: bold;
-        position:relative;
+        position: relative;
         left: 20px;
         display: flex;
         flex-direction: column;
-        }
-    
-    /*Job card end */
-    
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  </style>
-</head>
-<body>
+      }
 
-<nav class="navbar sticky-top navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="/"><img src="/images/LOGO.svg" alt="logo" width="40" height="44"></a>  
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/collabo">Collaborate</a></li>
-        <li><a href="/jobs">Jobs</a></li>
-        <li><a href="/donate">Donate</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <% if (user) { %>
-          <li><a href="/profile"><span class="glyphicon glyphicon-log-in"></span> Profile</a></li>
-          <% } else  { %>
-            <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
-          <% } %>
-      </ul>
-    </div>
-  </div>
-</nav>
+      /*Job card end */
 
-<div class="jumbotron">
-    <div class="container text-start">
-        <h1>Join our ever growing SDG Community.</h1>      
-        <p>Collaborate on projects, find jobs and workers. Also donate to trusted and approved SDG causes.</p>
+      /* Add a gray background color and some padding to the footer */
+      footer {
+        background-color: #f2f2f2;
+        padding: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('navbar'); %>
+    <div class="jumbotron" style="margin-top: 9rem;">
+      <div class="container text-start">
+        <h1>Join our ever growing SDG Community.</h1>
+        <p>
+          Collaborate on projects, find jobs and workers. Also donate to trusted
+          and approved SDG causes.
+        </p>
         <form>
-            <div class="input-group">
-            <input type="text" class="form-control" size="40" placeholder="Search" required>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              size="40"
+              placeholder="Search"
+              required
+            />
             <div class="input-group-btn">
-                <button type="button" class="btn btn-danger">Search</button>
+              <button type="button" class="btn btn-danger">Search</button>
             </div>
-            </div>
-        <form>
-    </div><br>
+          </div>
+        </form>
+      </div>
 
-    <div class="filte container text-center">
+      <div class="filte container text-center">
         <div class="filtEl row">
-            <div class="col-sm-2 text-center">
-              <p>👩🏽‍💻</p>
-                <p>Tech</p>
-            </div>
-            <div class="col-sm-2 text-center">
-              <p>📖</p>
-              <p>Education</p>
-            </div>
-            <div class="col-sm-2 text-center">
-              <p>👩🏽‍🌾</p>
-              <p>Agriculture</p>
-            </div>
-            <div class="col-sm-2 text-center">
-              <p>👨🏽‍⚕️</p>
-              <p>Health</p>
-            </div>
-            <div class="col-sm-2 text-center">
-              <p>⚖️</p>
-              <p>Legal aid</p>
-            </div>
-            <div class="col-sm-2 text-center">
-              <p>💰</p>
-              <p>Finance</p>
-            </div>
+          <div class="col-sm-2 text-center">
+            <p>👩🏽‍💻</p>
+            <p>Tech</p>
+          </div>
+          <div class="col-sm-2 text-center">
+            <p>📖</p>
+            <p>Education</p>
+          </div>
+          <div class="col-sm-2 text-center">
+            <p>👩🏽‍🌾</p>
+            <p>Agriculture</p>
+          </div>
+          <div class="col-sm-2 text-center">
+            <p>👨🏽‍⚕️</p>
+            <p>Health</p>
+          </div>
+          <div class="col-sm-2 text-center">
+            <p>⚖️</p>
+            <p>Legal aid</p>
+          </div>
+          <div class="col-sm-2 text-center">
+            <p>💰</p>
+            <p>Finance</p>
+          </div>
         </div>
+      </div>
     </div>
-</div><br>
+    <br />
 
-<div class="merger">
-
+    <div class="merger">
       <div class="mCards container text-start">
-          <div class="row">
-              
-            <a href=""><div class="kid col-sm-6">
-                  <img src="images\kid.png" class="img-responsive img-thumbnail" style="width:100%" alt="Image">
-                  <h2>Feed the children</h2>
-                  <p>The Food For All NGO is embarking on a project to donate food to
-                    children in rural and less fortunate environments. The aim is to 
-                    raise an amount of $7,000 as an...read more 
-                  </p>
-                  <div class="input-group-btn">
-                    <button type="button" class="btn btn-primary">Donate</button>
-                </div>
+        <div class="row">
+          <a href=""
+            ><div class="kid col-sm-6">
+              <img
+                src="images\kid.png"
+                class="img-responsive img-thumbnail"
+                style="width: 100%"
+                alt="Image"
+              />
+              <h2>Feed the children</h2>
+              <p>
+                The Food For All NGO is embarking on a project to donate food to
+                children in rural and less fortunate environments. The aim is to
+                raise an amount of $7,000 as an...read more
+              </p>
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-primary">Donate</button>
               </div>
-            </a>
-            <a href="">
-                <div class="bask col-sm-6">
-                  <h3>Join the Arise NGO to build a basketball
-                      field for the people of Kuntunse
-                  </h3>
-                  <div class="input-group-btn">
-                      <button type="button" class="btn btn-success">Collaborate</button>
-                    </div><br>
-                  <img src="images\BasketBall.png" class="img-responsive img-thumbnail" style="width:75%" alt="Image">     
-                </div>
-            </a>
-
-          </div>
-          <a href="">
-            <div class="box1">
-              <div class="avatar"><img src="images/companyicon.svg"></div>
-              <label id="company_name" class="gamalitech">GamaliTech Ghana</label>
-              </div>
-              </a>
-              <div class="emp">
-                <label class="employee">Employee Size:</label>
-                <label id="employee" class="num_employees">300</label><br>
-              </div>
-              <div class="ind">
-                <label class="Industry">Industry:</label>
-                <label class="technology">Technology</label>
-              </div>
+            </div>
           </a>
-            
+          <a href="">
+            <div class="bask col-sm-6">
+              <h3>
+                Join the Arise NGO to build a basketball field for the people of
+                Kuntunse
+              </h3>
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-success">
+                  Collaborate
+                </button>
+              </div>
+              <br />
+              <img
+                src="images\BasketBall.png"
+                class="img-responsive img-thumbnail"
+                style="width: 75%"
+                alt="Image"
+              />
+            </div>
+          </a>
+        </div>
+        <a href="">
+          <div class="box1">
+            <div class="avatar"><img src="images/companyicon.svg" /></div>
+            <label id="company_name" class="gamalitech">GamaliTech Ghana</label>
+          </div>
+        </a>
+        <div class="emp">
+          <label class="employee">Employee Size:</label>
+          <label id="employee" class="num_employees">300</label><br />
+        </div>
+        <div class="ind">
+          <label class="Industry">Industry:</label>
+          <label class="technology">Technology</label>
+        </div>
+      </div>
+
+      <div class="sCards container-fluid bg-3 text-center">
+        <h2>SDG KNOWLEDGE</h2>
+        <br />
+        <div class="row">
+          <a href="#">
+            <div class="sImage col-sm-3">
+              <h3>Eliminate Hunger</h3>
+              <img
+                src="images\hunger.jpg"
+                class="img-responsive img-thumbnail"
+                style="width: 100%"
+                alt="Image"
+              />
+            </div>
+          </a>
+          <a href="#">
+            <div class="col-sm-3">
+              <h3>Education</h3>
+              <img
+                src="images\Education.jpg"
+                class="img-responsive img-thumbnail"
+                style="width: 100%"
+                alt="Image"
+              />
+            </div>
+          </a>
+          <a href="#">
+            <div class="col-sm-3">
+              <h3>Health</h3>
+              <img
+                src="images\Health.jpg"
+                class="img-responsive img-thumbnail"
+                style="width: 100%"
+                alt="Image"
+              />
+            </div>
+          </a>
+          <a href="#">
+            <div class="col-sm-3">
+              <h3>Zero Poverty</h3>
+              <img
+                src="images\Poor.jpg"
+                class="img-responsive img-thumbnail"
+                style="width: 100%"
+                alt="Image"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+      <br />
+      <div class="sCards container-fluid bg-3 text-center">
+        <h2>EVENTS</h2>
+        <br />
+        <div class="eventCards row">
+          <a href="#">
+            <div
+              class="eCard col-sm-3 img-responsive"
+              style="
+                background-color: rgb(69, 182, 87);
+                color: #f2f2f2;
+                height: 115px;
+                border: 1px solid rgb(236, 236, 236);
+                border-radius: 4px;
+              "
+            >
+              <h3>Environmental Cleaning</h3>
+              <h4>20th June, 2022</h4>
+            </div>
+          </a>
+          <a href="#">
+            <div
+              class="col-sm-3 img-responsive"
+              style="
+                background-color: rgb(228, 202, 56);
+                color: #f2f2f2;
+                height: 115px;
+                border: 1px solid rgb(236, 236, 236);
+                border-radius: 4px;
+              "
+            >
+              <h3>International Spelling Bee</h3>
+              <h4>23rd June, 2022</h4>
+            </div>
+          </a>
+          <a href="#">
+            <div
+              class="col-sm-3 img-responsive"
+              style="
+                background-color: rgb(133, 159, 189);
+                color: #f2f2f2;
+                height: 115px;
+                border: 1px solid rgb(236, 236, 236);
+                border-radius: 4px;
+              "
+            >
+              <h3>Free Eye Screening at Tow Halls</h3>
+              <h4>25th June - July 1st, 2022</h4>
+            </div>
+          </a>
+          <a href="#">
+            <div
+              class="col-sm-3 img-responsive"
+              style="
+                background-color: rgb(65, 128, 65);
+                color: #f2f2f2;
+                height: 115px;
+                border: 1px solid rgb(236, 236, 236);
+                border-radius: 4px;
+              "
+            >
+              <h3>Energy Conservation Workshop</h3>
+              <h4>7th August, 2022</h4>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-          
+    <footer
+      class="container-fluid text-center"
+      style="background-color: #505050; color: #f2f2f2"
+    >
+      <h4>Join the conversation</h4>
+    </footer>
+  </body>
 
-<div class=" sCards container-fluid bg-3 text-center">    
-  <h2>SDG KNOWLEDGE</h2><br>
-  <div class="row">
-    <a href="#">
-        <div class="sImage col-sm-3">
-            <h3>Eliminate Hunger</h3>
-            <img src="images\hunger.jpg" class="img-responsive img-thumbnail" style="width:100%" alt="Image">
-        </div>
-    </a>
-    <a href="#">
-        <div class="col-sm-3"> 
-            <h3>Education</h3>
-            <img src="images\Education.jpg" class="img-responsive img-thumbnail" style="width:100%" alt="Image">
-        
-        </div>
-    </a>
-    <a href="#">
-        <div class="col-sm-3"> 
-            <h3>Health</h3>
-            <img src="images\Health.jpg" class="img-responsive img-thumbnail" style="width:100%" alt="Image">
-        </div>
-    </a>
-    <a href="#">
-        <div class="col-sm-3">
-        <h3>Zero Poverty</h3>
-        <img src="images\Poor.jpg" class="img-responsive img-thumbnail" style="width:100%" alt="Image">
-        </div>
-    </a>
-  </div>
-</div><br>
-<div class=" sCards container-fluid bg-3 text-center">    
-    <h2>EVENTS</h2><br>
-    <div class="eventCards row">
-      <a href="#">
-        <div class="eCard col-sm-3 img-responsive" style="background-color:rgb(69, 182, 87); color:#f2f2f2; height: 115px; border:1px solid rgb(236, 236, 236); border-radius: 4px;">
-            <h3>Environmental Cleaning</h3>
-            <h4>20th June, 2022</h4>
-          </div>
-      </a>
-      <a href="#">
-        <div class="col-sm-3 img-responsive" style="background-color:rgb(228, 202, 56); color:#f2f2f2; height: 115px; border:1px solid rgb(236, 236, 236); border-radius: 4px;" > 
-            <h3>International Spelling Bee</h3>
-            <h4>23rd June, 2022</h4>
-          </div>
-      </a>
-      <a href="#">
-          <div class="col-sm-3 img-responsive" style="background-color:rgb(133, 159, 189); color:#f2f2f2; height: 115px; border:1px solid rgb(236, 236, 236); border-radius: 4px;"> 
-            <h3>Free Eye Screening at Tow Halls</h3>
-            <h4>25th June - July 1st, 2022</h4>
-          </div>
-      </a>
-      <a href="#">
-        <div class="col-sm-3 img-responsive" style="background-color:rgb(65, 128, 65); color:#f2f2f2; height: 115px; border:1px solid rgb(236, 236, 236); border-radius: 4px;"> 
-          <h3>Energy Conservation Workshop</h3>
-          <h4>7th August, 2022</h4>
-        </div>
-    </a>
-    </div>
-  </div><br>
-
-<br>
-
-
-
-</body>
-<footer class="container-fluid text-center" style="background-color:#505050; color:#f2f2f2;">
-  <h4>Join the conversation</h4>
-</footer>
 </html>

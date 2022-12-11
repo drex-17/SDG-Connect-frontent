@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/css/companyJob.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="/css/companyJob.css" />
     <style>
       .navbar {
         margin-bottom: 0;
@@ -15,108 +20,137 @@
       }
     </style>
     <title>Company Post job</title>
-</head>
+  </head>
 
-<body>
-  <!-- <nav>
-    <div class="topnav">
-      <div class="navFlex">
-        <div>
-          <a ><img src="images/LOGO.svg" class="" href="#home" alt="logo" width="20" height="14"></a>
-          <a href="#home">Home</a>
-          <a href="#collaborate">Collaborate</a>
-          <a class="active" href= "#jobs">Jobs</a>
-          <a href="#donate">Donate</a>
-        </div>
-        <div>
-          <img src="images/ProfilePic.svg" class="profileP" href="#profile" alt="pp" width="20" height="14">
-        </div>
-      </div>
-    </div>
-  </nav> -->
-
-  <nav class="navbar sticky-top navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="#"><img src="/images/LOGO.svg" alt="logo" width="40" height="44"></a>  
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Collaborate</a></li>
-          <li class="active"><a href="#">Jobs</a></li>
-          <li><a href="#">Donate</a></li>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="/images/logo.svg" class="logo" width="70" />
+      </a>
+      <div class="collapse navbar-collapse justify-content-center" id="myNavbar">
+        <ul class="navbar-nav mr-4 mb-3 mb-lg-0">
+          <li class="nav-item mr-3"><a class="nav-link" href="#">Collaborate</a></li>
+          <li class="nav-item mx-4 active"><a class="nav-link" href="#">Jobs</a></li>
+          <li class="nav-item ml-3"><a class="nav-link" href="#">Donate</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/profile"><span class="glyphicon glyphicon-log-in"></span> Profile</a></li>
+          <li>
+            <a href="/profile"
+              ><span class="glyphicon glyphicon-log-in"></span> Profile</a
+            >
+          </li>
         </ul>
       </div>
-    </div>
-  </nav>
-  <div class="flex-container">
-    <div>
+    </nav>
+    <div class="flex-container">
+      <div class="form-wrapper">
         <form class="cardF" action="/job/post" method="post">
-          <h3>Post Job</h3>
-            <label for="">Name of Company</label>
-            <br>
-            <input type="text">
-            <br>
-            <label for="location">Company Location:</label>
-            <br>
-            <select name="location" id="location">
-              <option value="---">---</option>
-              <option value="accra">Accra,Ghana</option>
-              <option value="kumasi">Kumasi,Ghana</option>
-              <option value="ohio">Ohio, USA</option>
-              <option value="paris">Paris, France</option>
-            </select>
-            <br>
-            <label for="">Role Available</label>
-            <br>
-            <input type="text">
-            <br>
-            <label for="jobType">Job Type:</label>
-            <br>
-            <select name="jobType" id="jobType">
+          <h3 class="text-center mt-3">Post Job</h3>
+          <div class="form-group">
+            <label for="title">Job Title</label>
+            <input class="form-control" name="title" id="title" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="location">Job Location</label>
+            <input
+              name="location"
+              type="text"
+              class="form-control"
+              id="location"
+            />
+          </div>
+          <div class="form-group">
+            <label for="working_hours">Working Hours</label>
+            <input
+              name="working_hrs"
+              type="text"
+              class="form-control"
+              id="location"
+              placeholder="Per Week"
+            />
+          </div>
+          <div class="form-group">
+            <label for="job_type">Job Type:</label>
+            <select class="form-control" name="job_type" id="jobType">
               <option value="---">---</option>
               <option value="fullTime">Full Time</option>
               <option value="partTime">Part-Time</option>
               <option value="contract">Contract</option>
             </select>
-            <br>
+          </div>
+          <div class="form-group">
             <label for="experience">Experience Level:</label>
-            <br>
+            <br />
             <select name="experience" id="experience">
               <option value="---">---</option>
               <option value="beginner">Beginner</option>
               <option value="intermediate">Intermediate</option>
               <option value="expert">Expert</option>
             </select>
-            <br>
+            <br />
+          </div>
+          <div class="form-group">
             <label for="residency">Residency requirement:</label>
-            <br>
-            <select name="residency" id="residency">
+            <select class="form-control" name="residency" id="residency">
               <option value="---">---</option>
-              <option value="inPerson">In Person</option>
+              <option value="in_person">In Person</option>
               <option value="remote">Remote</option>
               <option value="hybrid">Hybrid</option>
             </select>
-            <br>
+          </div>
+          <div class="form-group">
             <label for="salary">Salary Estimate:</label>
-            <br>
-            <input type="range" step="3" min="25,000" max="75,000">
-            <br>            
-            <button class="btn btn-primary" type="submit">Post Job</button> 
+            <input name="salary" class="form-control" type="number" />
+          </div>
+          <div class="form-group">
+            <label for="des">Description</label>
+            <textarea
+              name="description"
+              id="des"
+              class="form-control"
+              cols="30"
+              rows="3"
+            ></textarea>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">
+            Post Job
+          </button>
         </form>
+      </div>
+      <div>
+        <p class="info">
+          Information collected will be displayed on job search cards and also
+          contribute to the tag system. Please make detailed concise
+          description.
+        </p>
+        <img src="/images/sittingCompJob.svg" class="sitt" alt="" />
+      </div>
     </div>
-    <div>
-      <p class="info">Information collected will be displayed on job search cards and also contribute to the tag system. Please make detailed concise description.</p>
-      <img src="/images/sittingCompJob.svg" class="sitt" alt="">
-    </div>
-  </div>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

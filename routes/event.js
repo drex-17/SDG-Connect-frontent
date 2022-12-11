@@ -14,12 +14,12 @@ const router = Router();
  * GET /donation -- 
  * when user hits this endpoint render collab opage
  */
-router.get('/', async (req, res, next) => {
+router.get('/collaboration', async (req, res, next) => {
   // const collabos = await getCollabos();
-  res.render('collaboarte_homepage', { user: req.isAuthenticated() })
+  res.render('collaboarte_homepage')
 })
 
-router.post('/add', async (req, res, next) => {
+router.post('/collaboration/add', async (req, res, next) => {
   let data = req.body
   let response = await addJob()
 });

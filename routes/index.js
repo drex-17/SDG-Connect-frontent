@@ -5,6 +5,22 @@ const logger = require('../utils/logger');
 
 const ensureLoggedIn = ensureLogIn();
 var router = express.Router();
+
+
+
+
+// GET /index
+router.get('/', async (req, res, next) => {
+  logger.info('index' + req.url);
+  // let user.isAuthenticated = req.isAuthenticated();
+  // logger.info('isAuth:' + user);
+
+  res.render('index', { user: req.isAuthenticated() })
+})
+
+
+
+
 /*
 async function getJobs(req, res, next) {
   try {

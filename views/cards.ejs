@@ -1,15 +1,14 @@
 <div class="card-deck">
-  <a href="/job/job_detail">
-    <div class="card">
-      <img class="card-img-top" src="<%= item.image %>" alt="Card image cap" />
-      <div class="card-body">
-        <h5 class="card-title"><%= items.title %></h5>
-        <p class="card-text"><%= item.type %> <%= item.location %></p>
-        <p class="card-text"><%= item.description.substring(36) %>...</p>
-        <p class="card-text">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </p>
+  <div class="card">
+    <img class="card-img-top" src="<%= item.image %>" alt="Card image cap" />
+    <div class="card-body">
+      <h5 class="card-title"><%= items.title %></h5>
+      <p class="card-text"><%= item.type %> <%= item.location %></p>
+      <p class="card-text"><%= item.description.substring(36) %>...</p>
+      <p class="card-text">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </p>
+      <a href="/job/job_detail" class="btn btn-primary">
       </div>
     </div>
-  </a>
 </div>

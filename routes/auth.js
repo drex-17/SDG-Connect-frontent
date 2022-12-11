@@ -12,23 +12,18 @@ const { addUser, getUser, addToken, getToken, getUserByMail } = require('../db_a
 
 const router = Router('');
 
-// GET /index
-router.get('/', async (req, res, next) => {
-  logger.info('index' + req.url)
-  res.render('index', {user: ''})
-})
-
 /* GET /login
  *
  */
-router.get('/login', async (req, res, next) => {
+router.get('/login', async (req, res) => {
   logger.info('l-url' + req.url);
-  res.render('sign_in'/*, { csrfToken: req.csrfToken() }*/);
+  logger.info('session', req.session.passport);
+  res.render('sign_in', { user: req.isAuthenticated() });/*, { csrfToken: req.csrfToken() });*/
 });
 
 /* GET /register
 */
-router.get('/register-user', function (req, res, next) {
+router.get('/register-user', function (req, res) {
   res.render('register_users');
 });
 
@@ -86,7 +81,7 @@ router.post('/register_user', async (req, res, next) => {
  * 
  */
 
-router.get('/sign-company', async (req, res, next) => {
+router.get('/sign-company', async (req, res) => {
   res.render('render')
 })
 
@@ -126,7 +121,7 @@ router.get('/sign-company', async (req, res, next) => {
 /**
  *  GET /reset -- reset password
  */
-router.get('/forgot', (req, res, next) => {
+router.get('/forgot', (req, res) => {
   res.render('forgotPassword');
 });
 
@@ -172,7 +167,7 @@ router.post('/forgot', async (req, res, next) => {
  * POST / reset_password
  * page to enter new password to reset
  */
-router.post('reset_password', (req, res, next) => {
+router.post('reset_password', (req, res) => {
 
 })
 
