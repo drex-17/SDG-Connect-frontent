@@ -1,73 +1,50 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
+  grid-auto-rows: minmax(100px, auto);
 
-  
+  gap: 1rem;
+  /* border: 1px solid black; */
+  margin: 10px;
+}
 
+.nested {
+  display: inline-block;
+  margin-right: 5px;
+}
 
+.p-2 {
+  border: 3px solid black;
+  margin: 2;
+}
 
-    .wrapper{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-      
-        grid-auto-rows: minmax(100px,auto);
-    
-    
-        gap: 1rem;
-        /* border: 1px solid black; */
-        margin: 10px;
-    }
-    
-    
-    
+.line {
+  border: 5px solid red;
+  padding: 5px;
+}
 
-    
-
-    
-    .nested {
-        
-            display: inline-block;
-            margin-right: 5px;
-            
-        
-       
-        
-    
-    }
-    
-    .p-2 {
-        border: 3px solid black;
-        margin: 2;
-    }
-    
-    
-    
-    .line {
-        border: 5px solid red;
-        padding: 5px;
-    }
-    
-    
-    .wrapper {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        /* grid-column-gap: 1em; */
-        /* grid-row-gap: 1em; */
-        /* row-gap: 1em;
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* grid-column-gap: 1em; */
+  /* grid-row-gap: 1em; */
+  /* row-gap: 1em;
         column-gap: 1em; */
-        gap: 1em;
-        
-    }
-    .profile {
-        /* Set the width and height of the image */
-        width: 50px;
-        height: 50px;
-      
-        /* Add rounded corners to the image */
-        border-radius: 10%;
-        align-items: center;
-        align-content: center;
-      }
+  gap: 1em;
+}
+.profile {
+  /* Set the width and height of the image */
+  width: 50px;
+  height: 50px;
 
-    /* .img{
+  /* Add rounded corners to the image */
+  border-radius: 10%;
+  align-items: center;
+  align-content: center;
+}
+
+/* .img{
         
             margin: auto;
             width: 50%;
@@ -75,54 +52,50 @@
             background-color: blue;
         
     } */
-   
 
-    /* button::before {
+/* button::before {
         content: "\f0b0";
         font-family: FontAwesome;
         padding-right: 5px;
       } */
 
-    
 /* Set the default border width */
 .element {
-    
-    border: 1px solid black;
-    border-radius: 5px;
-    height: 100px;
-    align-items: center;
-    align-content: center;
-    text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 100px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 
-    /* Set the width and height of the div */
- 
- 
+  /* Set the width and height of the div */
 
   /* Align the text to the left and right */
   text-align: left;
-  }
-  
+}
 
- .push {
-    
-    float: right;
-    
-  }
-  progress {
-    display: inline-block;
-  }
-  
-  /* Align the progress bar and the text vertically */
-  progress, .n {
-    vertical-align: middle;
-  }
+.push {
+  float: right;
+}
+progress {
+  display: inline-block;
+}
 
+/* Align the progress bar and the text vertically */
+progress,
+.n {
+  vertical-align: middle;
+}
 
-  .push {
-    position: relative;
-  }
-  
-  /* Set the top property of the inner div to a negative value */
-  .push {
-    top: -30px;
-  }
+.push {
+  position: relative;
+}
+
+/* Set the top property of the inner div to a negative value */
+.push {
+  top: -30px;
+}
+
+.nested .btn-light {
+  background-color: #cbd2da;
+}

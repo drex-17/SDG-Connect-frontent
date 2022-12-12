@@ -31,3 +31,5 @@ async function uploadImg(file) {
     return error.message;
   }
 }
+
+module.exports = uploadImg;

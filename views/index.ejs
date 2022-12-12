@@ -13,7 +13,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-      
       /* <!-- Remove the navbar's default margin-bottom and rounded borders --> */
       .navbar {
         margin-bottom: 0;
@@ -179,7 +178,7 @@
   </head>
   <body>
     <%- include('navbar'); %>
-    <div class="jumbotron" style="margin-top: 9rem;">
+    <div class="jumbotron" style="margin-top: 9rem">
       <div class="container text-start">
         <h1>Join our ever growing SDG Community.</h1>
         <p>
@@ -295,8 +294,8 @@
       <div class="sCards container-fluid bg-3 text-center">
         <h2>SDG KNOWLEDGE</h2>
         <br />
-        <div class="row">
-          <a href="#">
+        <div class="row d-flex">
+          <div class="item"><a href="#">
             <div class="sImage col-sm-3">
               <h3>Eliminate Hunger</h3>
               <img
@@ -306,40 +305,48 @@
                 alt="Image"
               />
             </div>
-          </a>
-          <a href="#">
-            <div class="col-sm-3">
-              <h3>Education</h3>
-              <img
-                src="images\Education.jpg"
-                class="img-responsive img-thumbnail"
-                style="width: 100%"
-                alt="Image"
-              />
-            </div>
-          </a>
-          <a href="#">
-            <div class="col-sm-3">
-              <h3>Health</h3>
-              <img
-                src="images\Health.jpg"
-                class="img-responsive img-thumbnail"
-                style="width: 100%"
-                alt="Image"
-              />
-            </div>
-          </a>
-          <a href="#">
-            <div class="col-sm-3">
-              <h3>Zero Poverty</h3>
-              <img
-                src="images\Poor.jpg"
-                class="img-responsive img-thumbnail"
-                style="width: 100%"
-                alt="Image"
-              />
-            </div>
-          </a>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="col-sm-3">
+                <h3>Education</h3>
+                <img
+                  src="images\Education.jpg"
+                  class="img-responsive img-thumbnail"
+                  style="width: 100%"
+                  alt="Image"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="col-sm-3">
+                <h3>Health</h3>
+                <img
+                  src="images\Health.jpg"
+                  class="img-responsive img-thumbnail"
+                  style="width: 100%"
+                  alt="Image"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="col-sm-3">
+                <h3>Zero Poverty</h3>
+                <img
+                  src="images\Poor.jpg"
+                  class="img-responsive img-thumbnail"
+                  style="width: 100%"
+                  alt="Image"
+                />
+              </div>
+            </a>
+          </div>
+          
         </div>
       </div>
       <br />
@@ -417,5 +424,4 @@
       <h4>Join the conversation</h4>
     </footer>
   </body>
-
 </html>

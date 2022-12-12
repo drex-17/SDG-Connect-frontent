@@ -1,8 +1,8 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
-const MagicLinkStrategy = require('passport-magic-link').Strategy;
-const logger = require('../utils/logger');
 require('dotenv').config()
+const CryptoJS = require('crypto-js');
+const logger = require('../utils/logger');
 const { getUser } = require('../db_api');
 /* Configure password authentication strategy.
  *
@@ -30,8 +30,9 @@ const authenticateUser = (passport) => {
     async (email, password, done) => {
     try {
       // Get user
+      let hash = CryptoJS.SHA256(password);
       logger.info(`email: ${email}:${password}`);
-      const user = await getUser(JSON.stringify({ email, password }));
+      const user = await getUser(JSON.stringify({ email, hash }));
 
       if (user.id) {
         let authenticated_user = { id: user.id, email: user.email }

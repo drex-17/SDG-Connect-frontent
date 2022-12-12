@@ -36,6 +36,9 @@ app.use(morgan('dev'));
 app.use(morganMiddleware);
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/ping', (req, res) => {
+  res.status(200).json({"test": "Everything is ok"});
+});
 
 // app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 60000 }}));
 app.use(session({
@@ -51,14 +54,20 @@ app.use(session({
 // app.use(csrf());
 app.use(passport.session());
 app.use(passport.initialize());
+app.use(flash());
 // console.log(v);
+
 app.use(function (req, res, next) {
   var msgs = req.session.messages || [];
   res.locals.messages = msgs;
-  res.locals.hasMessages = !!msgs.length;
-  req.session.messages = [];
+  // res.locals.hasMessages = !!msgs.length;
+  // req.session.messages = [];
+  res.locals.user = {auth: req.isAuthenticated()};
+  res.locals.message = req.flash(),
   next();
+  // next();
 });
+
 /*
 app.use(function (req, res, next) {
   res.locals.csrfToken = req.csrfToken();
@@ -69,7 +78,6 @@ app.use(function (req, res, next) {
 // app.post('/login', async (req, res) => {
 // console.log(req.body.email);
 // });
-app.use(flash());
 
 app.use('/', indexRouter);
 app.use('/auth', authRouter);

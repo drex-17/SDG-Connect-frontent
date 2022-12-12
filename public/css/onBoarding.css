@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+.griddy{
+    z-index: -1;
+}
+.skip{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    float: right;
+}
+.topCard{
+    /* From https://css.glass */
+    background: rgba(71, 165, 160, 0.19)9);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+
+    margin: auto;
+    width: 50%;
+    /* background-color: #50505054;
+    border-bottom: 3px solid #505050;
+    border-radius: 8px; */
+    padding: 10px;
+}
+.topCard h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.butt{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center; 
+    margin: auto;
+    width: 50%;
+    border-bottom: 2px #505050 solid;
+    border-radius: 8px;
+    background-color: rgb(207, 204, 204);
+}
+
+.griddye{
+    fill: #e61b1b;
+}
+.topCard{
+    text-align: center; 
+}
+
+.mainPic{
+    position: relative;
+    top: -200px;
+    width: 30%;
+    z-index: -1;
+}
+.mainPice{
+    position: relative;
+    top: -100px;
+    width: 30%;
+    z-index: -1;
+}
+.mainPic2{
+    opacity: 75%;
+    position: relative;
+    right: -200px;
+    top: -720px; 
+    /* height: 300px;*/
+    width: auto; 
+    z-index: -2;
+}

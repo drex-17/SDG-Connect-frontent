@@ -13,36 +13,27 @@
   </head>
   <body>
     <div class="container-fluid">
-      <nav>
-        <img src="/images/logo.svg" class="logo" />
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Collaborations</a>
-          </li>
-          <li>
-            <a href="#">Events</a>
-          </li>
-        </ul>
-      </nav>
+      <%- include('navbar') %>
 
       <div class="card-group">
-        <% jobs.forEach(function(job){ %>
+        <% if (jobs.length) { %>
+        <div class="info alert">No Jobs Posted Yet</div>
+        <% } else { %> <% jobs.forEach(function(job) { %>
 
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"><%= job.title %></h5>
-              <p class="card-text"><%= job.job_type %> <%= job.location %></p>
-              <p class="card-text"><%= job.description.substring(36) %>...</p>
-              <p class="card-text"><%= job.working_hrs %> / week</p>
-              <p class="card-text">Salary: <%= job.max_salary %> / week</p>
-              
-              <a href="/jobs/<%= job.id %>" class="btn btn-primary">Go somewhere</a>
-            </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><%= job.title %></h5>
+            <p class="card-text"><%= job.job_type %> <%= job.location %></p>
+            <p class="card-text"><%= job.description.substring(36) %>...</p>
+            <p class="card-text"><%= job.working_hrs %> / week</p>
+            <p class="card-text">Salary: <%= job.max_salary %> / week</p>
+
+            <a href="/jobs/<%= job.id %>" class="btn btn-primary"
+              >Go somewhere</a
+            >
           </div>
-        <% }); %>
+        </div>
+        <% }); %> <% } %>
       </div>
 
       <div class="card"></div>

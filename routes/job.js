@@ -14,9 +14,11 @@ router.get('/', async (req, res) => {
       "min_salary": 0,
       "max_salary": 0
   });
+  
   try {
-    response = await getJobs(data);
-    res.render('jobs', { jobs: response });
+    res.render('jobs', {jobs: data})
+    // response = await getJobs(data);
+    // res.render('jobs', { jobs: response.data });
   } catch (error) {
     logger.error(error.message);
     req.flash('err_msg', error.message);

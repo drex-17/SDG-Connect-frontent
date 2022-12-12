@@ -1,274 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SDG Connect | Collaborations</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="/css/collaboarte_homepage.css" />
-  </head>
-  <body>
-    <div class="container-fluid">
-    <%- include('navbar'); %>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="collaboarte_homepage.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    
+</head>
+<body>
+        <nav>
+            <img src="/images/logo.svg" class="logo">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Collaborations</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+            </ul>
+        </nav>
+    
     <div class="main_container">
-      <div class="searchfilter">
-        <div class="search">
-          <input
-            type="search"
-            id="search"
-            placeholder="Search through company posts or names"
-          />
-          <button type="submit" id="search_btn" class="searchbtn">
-            <img src="/images/searchicon.svg" />
-          </button>
-        </div>
-      </div>
-
-      <div class="column1">
-        <a href="#">
-          <div class="box1">
-            <div class="avatar"><img src="/images/companyicon.svg" /></div>
-            <label id="company_name" class="amalitech">AmaliTech Ghana</label
-            ><br />
-            <a
-              href="https://amalitech.org/"
-              style="
-                color: #0e7cab;
-                position: relative;
-                top: 25px;
-                left: 50px;
-                font-weight: lighter;
-                font-size: 20px;
-                text-decoration: underline;
-              "
-              >https://amalitech.org/</a
-            ><br />
-            <label class="employee">Employee Size:</label><br />
-            <label id="employee" class="num_employees">3000</label><br />
-            <label class="Industry">Industry:</label><br />
-            <label id="industry" class="industry">Technology</label>
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="box2">
-            <img src="/images/vector.svg" class="vector" /><br />
-            <div class="celebrate">
-              Join Us to<br />
-              Celebrate The <br />
-              Global <br />
-              Environmental <br />
-              Health <br />
-              Day.
+        <div class="searchfilter">
+            <div class="search">
+                <input type="search" id="search" placeholder="Search through company posts or names">
+                <button type="submit" id="search_btn" class="searchbtn"><img src="/images/searchicon.svg"></button>
             </div>
-            <br />
-            <div class="smalltext">Kicks off on March 22, 2023</div>
-            <a
-              href="#"
-              style="
-                color: #0e7cab;
+            <div class="filt">
+                <select name="filter" id="filter" style="border: 1px solid #C3BABA;
                 position: relative;
-                top: 8px;
-                font-weight: lighter;
-                font-size: 16px;
-                text-decoration: underline;
-              "
-              >Click here</a
-            >
-            <span>to add to Events.</span>
-          </div>
-        </a>
-      </div>
-
-      <div class="column2">
-        <a href="#">
-          <div class="box3">
-            <h4>
-              Packs of Soil needed <br />
-              to grow trees
-            </h4>
-            <br />
-            <a
-              href="#"
-              id=""
-              style="
-                font-size: 16px;
-                color: #5e5e5e;
-                position: relative;
-                left: 67px;
-                bottom: 30px;
-              "
-              >VIQ Solutions</a
-            >
-            <img
-              src="/images/viqicon.svg"
-              alt="VIQ Solutions logo"
-              class="viq"
-            />
-            <img src="/images/Ellipse 573.svg" class="ellipse" />
-            <p>
-              Content to be covered include <br />
-              simplification of management... <br />
-              <strong>Read More</strong>
-            </p>
-          </div>
-
-          <div class="box4">
-            <h4>Partnership Deal to <br />work on Landing Page</h4>
-            <br />
-            <a
-              href="#"
-              id=""
-              style="
-                font-size: 16px;
-                color: #5e5e5e;
-                position: relative;
-                left: 99px;
-                bottom: 30px;
-              "
-              >Proof Inc.</a
-            >
-            <img
-              src="/images/prooficon.svg"
-              alt="Proof Inc. logo"
-              class="proof"
-            />
-            <img src="/images/Ellipse 573.svg" class="ellipse2" />
-            <p>
-              Content to be covered include <br />
-              addition of concise yet... <br />
-              <strong>Read More </strong>
-            </p>
-          </div>
-
-          <div class="box5">
-            <h4>
-              Deal to work on Virtual <br />
-              Reality
-            </h4>
-            <br />
-            <a
-              href="#"
-              id=""
-              style="
-                font-size: 16px;
-                color: #5e5e5e;
-                position: relative;
-                left: 75px;
-                bottom: 30px;
-              "
-              >Meta</a
-            >
-            <img src="/images/metaicon.svg" alt="Meta logo" class="meta" />
-            <img src="/images/Ellipse 573.svg" class="ellipse3" />
-            <p>
-              Learn how to perform research in <br />
-              deep learning... <br />
-              <strong>Read More </strong>
-            </p>
-          </div>
-
-          <div class="box6">
-            <h4>
-              Partnership Deal to work <br />
-              on CapturePro
-            </h4>
-            <br />
-            <a
-              href="#"
-              id=""
-              style="
-                font-size: 16px;
-                color: #5e5e5e;
-                position: relative;
-                left: 75px;
-                bottom: 30px;
-              "
-              >VIQ Solutions</a
-            >
-            <img
-              src="/images/viqicon.svg"
-              alt="VIQ Solutions icon"
-              class="viq"
-            />
-            <img src="/images/Ellipse 573.svg" class="ellipse3" />
-            <p>
-              Help you securely speed <br />
-              the capture, creation, and <br />
-              management of large... <br />
-              <strong>Read More </strong>
-            </p>
-          </div>
-        </a>
-      </div>
-
-      <div class="description_box">
-        <h3>
-          Packs of Soil needed to grow <br />
-          trees
-        </h3>
-        <a
-          href="#"
-          id=""
-          style="
-            font-size: 24px;
-            color: #5e5e5e;
-            position: relative;
-            left: 5.7vw;
-            bottom: 0.15vh;
-          "
-          >VIQ Solutions</a
-        >
-        <img
-          src="/images/viqicon.svg"
-          alt="VIQ Solutions logo"
-          style="
-            width: 33px;
-            height: 37px;
-            display: block;
-            position: relative;
-            left: 2.5vw;
-            bottom: 4.8vh;
-          "
-        />
-        <button type="submit" id="">Collaborate</button> <br />
-        <hr />
-        <h4 style="margin-left: 3vw; font-size: 24px">
-          <strong style="text-decoration: none"
-            >Full Partnership Description</strong
-          >
-        </h4>
-
-        <div class="scroll-bg">
-          <div class="scroll-div">
-            <div class="scroll-object">
-              As Law Enforcement agencies transition to a technology-driven
-              workflow, VIQ Solutions is a leader in providing speech-to-text
-              editing services to various industries, with a specific focus on
-              Law Enforcement/ Criminal Justice. We are currently testing for
-              experienced Law Enforcement/Criminal Justice contract candidates.
-              This is a 100% remote opportunity for Independent Contractors.
-              Content to be covered includes jailhouse recordings,
-              interrogations, field recordings, and other audio/video related to
-              routine Law Enforcement/Criminal Justice workflows. The work will
-              involve intense attention to detail in discerning what is said and
-              excellent proofreading skills. In this role you will process audio
-              recordings, strictly adhering to style guides, to edit
-              AI-generated text-to- verbatim transcripts. As an independent
-              contractor for VIQ Solutions, candidates will have the opportunity
-              to set their own schedule and receive guidance from our
-              supportive, in-office team whenever needed. We have work available
-              24/7/365 to fit any schedule. Those with weekend availability are
-              encouraged to apply.
+                bottom: 111px;
+                margin-left: 64%;
+                width: 190px;
+                height: 75px;
+                border-radius: 10px;
+                background: #ffff;
+                line-height: normal;
+                font-family: 'Futura Bk BT', sans-serif;
+                font-size: 24px;
+                color: #C3BABA;
+                cursor: pointer; 
+                padding-left: 0.5%;
+                padding-right: 0.5%;">
+                    <option value="Select filter">--Select filter--</option>
+                    <option value="Industry">Industry</option>
+                    <option value="Employee Size">
+                        Employee Size <select name="employee size in numbers" id="emp_size">
+                    </option>
+                    <option value=""></option>
+                </select>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    </div>
-  </body>
+        <div class="row">
+            <div class="column1">
+                <a href="#">
+                    <div class="box1">
+                        <div class="avatar"><img src="/images/companyicon.svg"></div>
+                        <label id="company_name" class="amalitech">AmaliTech Ghana</label><br>
+                        <a href="https://amalitech.org/" 
+                        style="color: #0E7CAB; 
+                        position: relative; 
+                        top:25px;
+                        left: 50px;
+                        font-weight: lighter;
+                        font-size: 20px;
+                        text-decoration: underline;">https://amalitech.org/</a><br>
+                        <label class="employee">Employee Size:</label><br>
+                        <label id="employee" class="num_employees">3000</label><br>
+                        <label class="Industry">Industry:</label><br>
+                        <label id="industry" class="industry">Technology</label>  
+                    </div>
+                </a>  
+            
+                <a href="#">
+                    <div class="box2">
+                        <img src="/images/vector.svg" class="vector"><br>
+                        <div class="celebrate">Join Us to<br> Celebrate The <br> Global <br> Environmental <br> Health <br> Day.</div><br>
+                        <div class="smalltext"> Kicks off on March 22, 2023</div>
+                        <a href="#" style="color: #0E7CAB; 
+                        position: relative;
+                        top: 8px;
+                        font-weight: lighter;
+                        font-size: 16px;
+                        text-decoration: underline">Click here</a> <span>to add to Events.</span> 
+                    </div>
+                </a>
+    
+            </div>
+        </div>
+       
+        
+        <div class="column2">
+            <a href="#">
+                <div class="box3">
+                    <h4>Packs of Soil needed <br> to grow trees</h4> <br>
+                    <a href="#" id="" style=
+                    "font-size: 16px;
+                     color: #5E5E5E;
+                     position:relative; 
+                     left:67px;
+                     bottom: 30px;">VIQ Solutions</a>
+                     <img src="/images/viqicon.svg" alt="VIQ Solutions logo" class="viq">
+                     <img src="/images/Ellipse 573.svg" class="ellipse">
+                     <p>Content to be covered include <br> 
+                        simplification of management... <br> <strong>Read More</strong> 
+                </div>
+                <div class="box4" id="visiblebox2">
+                    <h4>Partnership Deal to <br>work on Landing Page</h4> <br>
+                    <a href="#" style=
+                    "font-size: 16px;
+                     color: #5E5E5E;
+                     position:relative; 
+                     left:99px;
+                     bottom: 30px;">Proof Inc.</a>
+                     <img src="/images/prooficon.svg" alt="Proof Inc. logo" class="proof">
+                     <img src="/images/Ellipse 573.svg" class="ellipse2">
+                     <p>Content to be covered include <br> 
+                        addition of concise yet... <br> <strong>Read More </strong>  
+                </div>
+                <div class="box5" id="visiblebox3">
+                    <h4>Deal to work on Virtual <br> 
+                        Reality</h4> <br>
+                    <a href="#" style=
+                    "font-size: 16px;
+                     color: #5E5E5E;
+                     position:relative; 
+                     left:75px;
+                     bottom: 30px;">Meta</a>
+                     <img src="/images/metaicon.svg" alt="Meta logo" class="meta">
+                    <img src="/images/Ellipse 573.svg" class="ellipse3">
+                     <p>Learn how to perform research in <br> 
+                        deep learning...   <br> <strong>Read More </strong>  
+                </div>
+                <div class="box6">
+                    <h4>Partnership Deal to work <br> 
+                        on CapturePro</h4> <br>
+                    <a href="#" id="" style=
+                    "font-size: 16px;
+                     color: #5E5E5E;
+                     position:relative; 
+                     left:75px;
+                     bottom: 30px;">VIQ Solutions</a>
+                     <img src="/images/viqicon.svg" alt="VIQ Solutions icon" class="viq">
+                    <img src="/images/Ellipse 573.svg" class="ellipse3">
+                     <p>Help you securely speed
+                        <br> the capture,  
+                        creation, and <br> management of large... <br> <strong>Read More </strong>  
+                </div>                
+            </a>
+        </div>
+
+        <div class="description_box">
+            <h3>Packs of Soil needed to grow <br> trees</h3>
+            <a href="#" id="" style=
+            "font-size: 24px;
+             color: #5E5E5E;
+             position:relative; 
+             left:5.7vw;
+             bottom: 0.15vh;">VIQ Solutions</a>
+             <img src="/images/viqicon.svg" alt="VIQ Solutions logo" style=" 
+             width: 33px;
+             height: 37px;
+             display: block;
+             position: relative;
+             left: 2.5vw;
+             bottom: 4.8vh ;">
+             <button type="submit" id="collab">Collaborate</button> <br>
+             <hr><button type="submit" id="postbtn" 
+             style="height: 10vh;
+             width: 10vh;
+             border-radius: 50px;
+             position: relative;
+             left: 75%;
+             bottom: 7.5%;"
+             >Post</button><img src="/images/Branch.svg" alt="">
+             <h4 style="margin-left: 3vw;
+             font-size: 24px;"><strong style="text-decoration: none;
+             position: relative;
+             bottom: 10vh;">Full Partnership Description</strong></h4>
+            <div class="scroll-bg">
+                <div class="scroll-div">
+                    <div class="scroll-object">
+                        As Law Enforcement agencies transition to a technology-driven 
+workflow, VIQ Solutions is a leader in 
+providing speech-to-text editing 
+services to various industries, with a 
+specific focus on Law Enforcement/
+Criminal Justice. We are currently 
+testing for experienced Law 
+Enforcement/Criminal Justice contract 
+candidates. This is a 100% remote 
+opportunity for Independent 
+Contractors. Content to be covered 
+includes jailhouse recordings, 
+interrogations, field recordings, and 
+other audio/video related to routine 
+Law Enforcement/Criminal Justice 
+workflows. The work will involve 
+intense attention to detail in discerning 
+what is said and excellent proofreading 
+skills. In this role you will process audio 
+recordings, strictly adhering to style 
+guides, to edit AI-generated text-to-
+verbatim transcripts. As an independent 
+contractor for VIQ Solutions, candidates 
+will have the opportunity to set their 
+own schedule and receive guidance 
+from our supportive, in-office team 
+whenever needed. We have work 
+available 24/7/365 to fit any schedule. 
+Those with weekend availability are 
+encouraged to apply.
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hidedescription_box2" id="invisiblebox2">
+            <h3>Partnership deal to work on <br> Landing  page </h3>
+            <a href="https://www.proofserve.com/" id="" style=
+            "font-size: 24px;
+             color: #5E5E5E;
+             position:relative; 
+             left:5.7vw;
+             bottom: 0.15vh;">Proof Inc.</a>
+             <img src="/images/prooficon.svg" alt="Proof Inc logo" style=" 
+             width: 37px;
+             height: 33px;
+             display: block;
+             position: relative;
+             left: 2.5vw;
+             bottom: 4.8vh ;">
+             <button type="submit" id="collab">Collaborate</button> <br>
+             <hr><button type="submit" id="postbtn" 
+             style="height: 10vh;
+             width: 10vh;
+             border-radius: 50px;
+             position: relative;
+             left: 75%;
+             bottom: 7.5%;"
+             >Post</button>
+             <h4 style="margin-left: 3vw;
+             font-size: 24px;"><strong style="text-decoration: none;
+             position: relative;
+             bottom: 10vh;">Full Partnership Description</strong></h4>
+            <div class="scroll-bg">
+                <div class="scroll-div">
+                    <div class="scroll-object">
+                        To help our customers adopt our products quickly and help fuel our company growth to support them, we’re looking for a web developer intern to work on the digital marketing team to shape HashiCorp's web properties into examples of web development and user experience. This role is for an aspiring developer who cares deeply about design, architecture, and performance. This is a full-time remote internship position and will report to the engineering lead of digital marketing.
+In this role, you can expect to...
+Contribute maintainable, well-tested, accessible, and well-documented code to our shared React component library.
+Extend and improve the shared platform tooling and libraries used across all our sites.
+Partner with designers to implement front-end projects with animations, interaction and meticulous polish.
+Improve the way that users consume our product documentation and work with product engineers to improve their docs authoring experience.
+Build out features for authenticated users on our Developer application.
+Use and contribute improvements to our open source tools including next-mdx-remote, Swingset, and more.
+Contribute to backend systems and APIs that power our sites
+The technologies we use include JavaScript, TypeScript, Node.js, React, Next.js and more. We're not dogmatic about the tools we use and are constantly learning as a team. React and Next.js are core tenets of our architecture. We're active in the community and have been heavily invested in Next.js for years. We believe strongly in learning, so deep prior experience with our tools of choice isn't strictly necessary, but you should be sure that you will enjoy working with them every day.
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hidedescription_box3" id="invisiblebox3">
+            <h3>Deal to work on Virtual <br> Reality </h3>
+            <a href="#" id="" style=
+            "font-size: 24px;
+             color: #5E5E5E;
+             position:relative; 
+             left:5.7vw;
+             bottom: 0.15vh;">Meta</a>
+             <img src="/images/metaicon.svg" alt="Meta logo" style=" 
+             width: 28px;
+             height: 32px;
+             display: block;
+             position: relative;
+             left: 2.5vw;
+             bottom: 4.8vh ;">
+             <button type="submit" id="collab">Collaborate</button> <br>
+             <hr><button type="submit" id="postbtn" 
+             style="height: 10vh;
+             width: 10vh;
+             border-radius: 50px;
+             position: relative;
+             left: 75%;
+             bottom: 7.5%;"
+             >Post</button>
+             <h4 style="margin-left: 3vw;
+             font-size: 24px;"><strong style="text-decoration: none;
+             position: relative;
+             bottom: 10vh;">Full Partnership Description</strong></h4>
+            <div class="scroll-bg">
+                <div class="scroll-div">
+                    <div class="scroll-object">
+                        Join us as we pursue our disruptive new vision to make machine data accessible, usable and valuable to everyone. We are a company filled with people who are passionate about our product and seek to deliver the best experience for our customers. At Splunk, we’re committed to our work, customers, having fun and most importantly to each other’s success. Learn more about Splunk careers and how you can become a part of our journey!
+
+Role:
+The Splunk internship program runs for a minimum of 10 weeks, up to a maximum of 12 consecutive weeks with start dates between May and June 2023. Applicants should be available to participate full-time (40 hours/week) in an internship during this time.
+
+Splunk Growth Engineering Team is looking for a smart, UI Web Developer Intern to join them for Summer 2023. Our Interns are given challenging projects over the work term, and are provided with a meaningful experience with high expectations for performance. If you want to build a rich, responsive and intuitive UI, this is the opportunity for you!
+
+This team is responsible for enhancing and managing UI for splunk.com and various other marketing web properties, with a focus on the UI tools and the latest UI frameworks. You will work directly with the brightest technical minds in the business as we build the intuitive, rich and responsive UI.
+
+Responsibilities:
+As a Web Developer (UI) Intern you will be responsible for …
+
+Working closely with the UI team members to create and implement new UI features
+Investigating and fixing bugs to improve the overall UI experience
+Interact with other team members to incorporate their innovations and vice versa
+Identify and communicate best practices for front-end engineering
+Requirements:
+Familiarity with web and digital marketing strategies, and basic HTML.
+Ability to balance multiple projects and priorities, timely and efficiently, in a fast-paced environment.
+An ability to work in a CMS such as WordPress/Adobe Experience Manager etc.
+Web development experience using the latest UI frameworks.
+Solid communication skills and strong work ethic.
+Willingness to take direction but also to find creative ways to improve on that direction initiative.
+Experience of Agile Methodology.
+Education:
+Currently pursuing a Bachelor's with a graduation date of December 2023 or later.
+What We Offer You:
+The opportunity to work with a set of extraordinarily talented and dedicated peers. Splunk flourishes with disruption and diversity.
+A constant stream of new things for you to learn and an opportunity for growth and mentorship. We believe in growing engineers through ownership and leadership opportunities. We also believe mentors help both sides of the equation.
+A stable, collaborative and supportive work environment.
+We value diversity at our company. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, or any other applicable legally protected characteristics in the location in which the candidate is applying.
+
+For job positions in San Francisco, CA, and other locations where required, we will consider for employment qualified applicants with arrest and conviction records.
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>    
+
+    <script>
+        
+        $(function(){
+            $("#visiblebox2").click(function(){
+                $('#invisiblebox2').toggleClass("showdescription_box2");
+            });
+        });
+
+        $(function(){
+            $("#visiblebox3").click(function(){
+                $('#invisiblebox3').toggleClass("showdescription_box3");
+            });
+        });
+        
+    </script>
+    
+</body>
+<footer class="container-fluid text-center" style="background-color:#505050; color:#f2f2f2;">
+    <img  src="/images/logo.svg" class="footLogo" alt=""  width="70" height="74" style = "position:absolute; left:80px;">
+    <h4 class="footNote">Join the conversation</h4>
+    <img src="/img/facebook.svg" alt="Follow us on Facebook" >
+    <img src="/img/instagram.svg" alt="Follow us on Instagram">
+    <img src="/img/twitter.svg" alt="Follow Us on twitter">
+    <img src="/img/twitch.svg" alt="add Us on twitch">
+  </footer>
 </html>
