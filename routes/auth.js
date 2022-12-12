@@ -47,7 +47,7 @@ router.get('/signup-user', function (req, res) {
  * then a new user record is inserted into the database.  If the record is
  * successfully created, the user is logged in.
  */
-router.post('/register-user', async (req, res, next) => {
+router.post('/register', async (req, res, next) => {
   logger.info('email', req.body.email);
   logger.info(req.url);
   // console.log(req.body.email);
@@ -62,7 +62,7 @@ router.post('/register-user', async (req, res, next) => {
   try {
     // logger.info('req', JSON.stringify(req));
     let data = JSON.stringify({
-      name, email, phone, password: hashStr
+      name, email, phone, password: hashStr, token: ""
     });
     logger.info(data)
     const response = await addUser(data);

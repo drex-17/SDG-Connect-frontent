@@ -23,36 +23,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="/">
-        <img src="/images/logo.svg" class="logo" width="70" />
-      </a>
-      <div class="collapse navbar-collapse justify-content-center" id="myNavbar">
-        <ul class="navbar-nav mr-4 mb-3 mb-lg-0">
-          <li class="nav-item mr-3"><a class="nav-link" href="#">Collaborate</a></li>
-          <li class="nav-item mx-4 active"><a class="nav-link" href="#">Jobs</a></li>
-          <li class="nav-item ml-3"><a class="nav-link" href="#">Donate</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="/profile"
-              ><span class="glyphicon glyphicon-log-in"></span> Profile</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <%- include('navbar'); %>
     <div class="flex-container">
       <div class="form-wrapper">
         <form class="cardF" action="/job/post" method="post">
@@ -137,6 +108,7 @@
         <img src="/images/sittingCompJob.svg" class="sitt" alt="" />
       </div>
     </div>
+    <%- include('footer'); %>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

@@ -16,7 +16,7 @@ const router = Router();
  */
 router.get('/', async (req, res, next) => {
   // const collabos = await getCollabos();
-  res.render('collaboarte_homepage', { user: req.isAuthenticated() })
+  res.render('collaboarte_homepage')
 })
 
 router.post('/add', async (req, res, next) => {

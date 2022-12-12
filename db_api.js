@@ -3,16 +3,16 @@ const axios = require('axios').default;
 // const formData = new FormData();
 // 'http://192.168.15.172:5050/api'
 
-const URL = "https://exceptionally-mint-toast-world-dev.wayscript.cloud/api";
+const URL = "http://192.168.15.172:1250/api";
 const URL1 = "https://exceptionally-mint-toast-world-dev.wayscript.cloud/api";
 
 axios.defaults.headers['Content-Type'] = 'application/json';
 // axios.defaults.baseURL = '';
-axios.defaults.baseURL = URL1;
+axios.defaults.baseURL = URL;
 
 const getUser = (data) => axios.get('/user', { data: data });
 const getUserByPhone = (data) => axios.get('/user', { data: data });
-const addUser = (data) => axios.post('/user/add', { data: data });
+const addUser = (data) => axios.post('/register', { data: data });
 
 const addJob = (data) => axios.post('/job', { data: data });
 const getJobs = (data) => {
